@@ -12,6 +12,36 @@
 </head>
 
 <body>
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "113656446725639");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v17.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <header>
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="https://pianist.studio"><img src="PS logo.png" width="150"></a>
@@ -32,26 +62,36 @@
 
   <section id="hero" class="back-primary text-white text-center py-5">
     <div class="container">
-      <h1 class="display-4">Piano Lessons</h1>
-      <h2>with Pianist Studio</h2>
-      <a href="#contact" class="btn btn-light btn-lg mt-3">Book a Lesson</a>
+      <h1 class="display-4">Online Piano Lessons</h1>
+      <h2>custom-tailored to you</h2>
+      <a href="#contact" class="btn btn-light btn-lg mt-3">Book a Meet & Greet</a>
+
     </div>
   </section>
 
   <section id="about" class="py-5">
     <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Welcome to my piano tutoring page! With years of experience as a pianist and a passion for teaching, I am
-        excited to help you on your musical journey. Whether you are a beginner or looking to improve your skills, I
-        offer personalized lessons to suit your needs.
-      </p>
+      <h2>About the Instructor</h2>
+      <div class="row">
+        <div class="col-2">
+          <img src="pianoInstructor.jpg" width="300" class="img-fluid rounded-circle mx-auto mb-2">
+        </div>
+        <div class="col-10">
+          <p>
+            Welcome to my piano tutoring page! With years of experience as a pianist and a passion for teaching, I am
+            excited to help you on your musical journey. Whether you are a beginner or looking to improve your skills, I
+            offer personalized lessons to suit your needs.
+          </p>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
   <section id="services" class="bg-light py-5">
     <div class="container">
-      <h2>Services</h2>
+      <h2>What the lessons entail</h2>
       <ul>
         <li>One-on-One Piano Lessons</li>
         <li>Music Theory and Technique</li>
@@ -81,8 +121,8 @@
 
   <section id="contact" class="bg-light py-5">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>Ready to start your musical journey? Get in touch to book a lesson or inquire about my services.</p>
+      <h2>Contact Us</h2>
+      <p>Ready to start your musical journey? Get in touch to book a lesson or inquire about our services.</p>
       <form action="submit_form.php" method="post">
         <div class="form-group">
           <input type="text" name="name" class="form-control" placeholder="Your Name" required>
@@ -93,13 +133,13 @@
         <div class="form-group">
           <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+        <button type="submit" class="btn back-primary text-white btn-lg">Send Message</button>
       </form>
     </div>
   </section>
 
   <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2023 Your Name. All rights reserved.</p>
+    <p>&copy; 2023 Pianist Studio. All rights reserved.</p>
   </footer>
 
   <!-- Bootstrap JS (popper.js and bootstrap.min.js are required for Bootstrap components) -->
