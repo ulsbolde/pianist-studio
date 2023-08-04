@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pianist Studio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Pianist Studio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Piano Lessons with Ulsbold</h1>
+      <h2>by the Pianist Studio</h2>
+      <a href="#contact" class="btn btn-light btn-lg mt-3">Book a Lesson</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Welcome to my piano tutoring page! With years of experience as a pianist and a passion for teaching, I am
+        excited to help you on your musical journey. Whether you are a beginner or looking to improve your skills, I
+        offer personalized lessons to suit your needs.
+      </p>
+    </div>
+  </section>
+
+  <section id="services" class="bg-light py-5">
+    <div class="container">
+      <h2>Services</h2>
+      <ul>
+        <li>One-on-One Piano Lessons</li>
+        <li>Music Theory and Technique</li>
+        <li>Preparation for Exams and Performances</li>
+        <li>Customized Lesson Plans</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <div class="testimonial">
+            <blockquote>
+              "I've had the pleasure of taking piano lessons with Your Name, and I can't recommend them enough. Patient,
+              talented, and encouraging – exactly what you need in a piano tutor."
+            </blockquote>
+            <cite>John Doe</cite>
+          </div>
+        </div>
+        <!-- Add more testimonials here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Ready to start your musical journey? Get in touch to book a lesson or inquire about my services.</p>
+      <form action="submit_form.php" method="post">
+        <div class="form-group">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS (popper.js and bootstrap.min.js are required for Bootstrap components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.15/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
