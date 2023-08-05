@@ -104,3 +104,17 @@ footer {
 .back-primary {
     background-color:#cc0b45;
 }
+
+.rounded-custom {
+    border-radius: 30px; /* Adjust the value to control the roundness of the corners */
+}
+
+.img-3d-shadow {
+    box-shadow: 5px 10px 30px #888888; /* Adjust the values as needed */
+  }
+
+  .img-3d-shadow2 {
+    box-shadow: -5px -8px 30px #888888; /* Adjust the values as needed */
+  }
+
+  
