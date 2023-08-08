@@ -1,10 +1,13 @@
 /* Montserrat Font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200;300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:w@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&display=swap');ght@200&display=swap');
+
 /* Lato Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    /* padding-top: 56px; */
 }
 
 h1,
@@ -14,18 +17,18 @@ h4,
 h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: white;
     color: #cc0b45;
-    padding: 1rem;
 }
 
 header nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -35,7 +38,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #cc0b45;
+    color: black;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -70,27 +73,26 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.cta-button {
+/* .cta-button {
     display: inline-block;
     padding: 12px 24px;
     background-color: #cc0b45;
-    color: #fff;
+    color: white;
     text-decoration: none;
-    border-radius: 4px;
-}
+    border-radius: 6px;
+} */
 
-.cta-button:hover {
+/* .cta-button:hover {
     background-color: #cc0b45;
-    /* Keeping the same color on hover */
-}
+} */
 
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-#testimonials .testimonial {
+/* #testimonials .testimonial {
     border-left: 3px solid #cc0b45;
     padding-left: 20px;
     margin-bottom: 20px;
@@ -98,17 +100,18 @@ header nav ul li a:hover {
 
 #testimonials blockquote {
     font-style: italic;
-}
+} */
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #f0f0f0;
+    background-color: white;
+    color: black;
 }
 
-.back-primary {
+/* .back-primary {
     background-color: #cc0b45;
-}
+} */
 
 .rounded-custom {
     border-radius: 30px;
@@ -116,12 +119,12 @@ footer {
 }
 
 .img-3d-shadow {
-    box-shadow: 5px 10px 30px #888888;
+    box-shadow: 5px 10px 20px #3b3a3a;
     /* Adjust the values as needed */
 }
 
 .img-3d-shadow2 {
-    box-shadow: -5px -8px 30px #888888;
+    box-shadow: -5px -8px 20px #3b3a3a;
     /* Adjust the values as needed */
 }
 
@@ -134,3 +137,14 @@ footer {
     background-size: 200px;
     background-repeat: no-repeat;
 }
+
+.price-card {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 1rem;
+}
+
+.navbar-shadow {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+  }
